@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import logo from '/src/assets/logo.png';
 import bgm from '/src/assets/bgm.mp3';
+import SantaHat from './SantaHat';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,21 +61,23 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-black/80 backdrop-blur-xl border-b border-white/10'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? 'bg-black/80 backdrop-blur-xl border-b border-white/10'
+        : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo with Image */}
-          <div className="flex-shrink-0 flex items-center space-x-2">
-            <img
-              src={logo}
-              alt="Maha Captures Logo"
-              className="h-20 w-75"
-            />
+          <div className="flex-shrink-0 flex items-center space-x-2 relative group">
+            <div className="relative">
+              <img
+                src={logo}
+                alt="Maha Captures Logo"
+                className="h-20 w-75"
+              />
+              <SantaHat className="absolute -top-2 left-1 w-8 h-8 transform -rotate-12 pointer-events-none z-10" />
+            </div>
           </div>
 
           {/* Desktop Navigation */}
