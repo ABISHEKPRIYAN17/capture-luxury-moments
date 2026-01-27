@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import logo from '/src/assets/logo.png';
 import bgm from '/src/assets/bgm.mp3';
-import SantaHat from './SantaHat';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -76,7 +75,6 @@ const Navbar = () => {
                 alt="Maha Captures Logo"
                 className="h-20 w-75"
               />
-              <SantaHat className="absolute -top-2 left-1 w-8 h-8 transform -rotate-12 pointer-events-none z-10" />
             </div>
           </div>
 
