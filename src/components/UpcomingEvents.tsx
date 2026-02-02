@@ -5,76 +5,7 @@ import { Calendar, MapPin, Camera, Clock } from 'lucide-react';
 
 const UpcomingEvents = () => {
   const events = [
-    {
-      id: 1,
-      title: "Asvika Birthday Celebration",
-      location: "Shree harishwar",
-      date: "August 26, 2025",
-      time: "6:00 PM",
-      type: "Birthday",
-      image: "https://i.postimg.cc/qRSMcBNt/Whats-App-Image-2025-08-27-at-14-47-59-c8529d84.jpg",
-      status: "Confirmed"
-    },
-    {
-      id: 2,
-      title: "Murali & Mythili Wedding",
-      location: "Ramanishankar Mandapam, Vellore",
-      date: "August 28, 2025",
-      time: "10:00 AM",
-      type: "Wedding",
-      image: "https://i.postimg.cc/wxRBqNrD/Whats-App-Image-2025-08-27-at-14-50-58-5806ca4f.jpg",
-      status: "Confirmed"
-    },
-    {
-      id: 3,
-      title: "Luxury Wedding - Meenakshi & Arun",
-      location: "Vellore Palace Resort",
-      date: "January 15, 2025",
-      time: "10:00 AM",
-      type: "Wedding",
-      image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=400&fit=crop",
-      status: "Confirmed"
-    },
-    {
-      id: 4,
-      title: "Corporate Annual Meet - Infosys",
-      location: "Bangalore Convention Center",
-      date: "January 22, 2025",
-      time: "2:00 PM",
-      type: "Corporate",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop",
-      status: "Confirmed"
-    },
-    {
-      id: 5,
-      title: "Fashion Week Portfolio Shoot",
-      location: "Studio Bangalore",
-      date: "February 5, 2025",
-      time: "11:00 AM",
-      type: "Fashion",
-      image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&h=400&fit=crop",
-      status: "Open"
-    },
-    {
-      id: 6,
-      title: "Birthday Celebration - Aditi",
-      location: "Vellore Garden Resort",
-      date: "February 12, 2025",
-      time: "6:00 PM",
-      type: "Birthday",
-      image: "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600&h=400&fit=crop",
-      status: "Open"
-    },
-    {
-      id: 7,
-      title: "Engagement Shoot - Sneha & Karthik",
-      location: "Lalbagh Botanical Garden",
-      date: "February 20, 2025",
-      time: "5:00 PM",
-      type: "Engagement",
-      image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=400&fit=crop",
-      status: "Open"
-    }
+
   ];
 
   const getStatusColor = (status: string) => {
